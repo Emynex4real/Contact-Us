@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <section class="success" aria-live="polite">
+        <div class="success-container">
+            <div class="message-sent">
+                <img src="assets/images/icon-success-check.svg" alt="Checkmark icon indicating successful submission">
+                <p class="message-sent-text">Message Sent!</p>
+            </div>
+            <p class="thanks-text">Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+    </section>
+
+    
+    <main class="main-container">
+        
+        <main class="contact-us-form">
+            <section class="contact-us">
+                <h1 class="contact-header">Contact Us</h1>
+                <form action="#" method="post" id="contact-form" aria-labelledby="contact-header">
+                    <div class="firstname-lastname">
+                        <div class="firstName container">
+                            <label for="firstname">First Name <span class="important">*</span></label><br>
+                            <input type="text" id="firstname" name="firstname" class="input">
+                            <span class="error-message" id="firstname-error" aria-live="assertive">This field is required</span>
+                        </div>
+                        <div class="lastName container">
+                            <label for="lastname">Last Name <span class="important">*</span></label><br>
+                            <input type="text" id="lastname" name="lastname" class="input">
+                            <span class="error-message" id="lastname-error" aria-live="assertive">This field is required</span>
+                        </div>
+                    </div>
+                    <div class="email-address container">
+                        <label for="email" class="label">Email Address <span class="important">*</span></label><br>
+                        <input type="email" id="email" name="email" class="input">
+                        <span class="error-message" aria-live="assertive">Please enter a valid email address</span>
+                    </div>
+                    <div class="query-type container">
+                        <fieldset>
+                            <legend>Query Type <span class="important">*</span></legend>
+                            <div class="general-support-radio">
+                                <div class="general">
+                                    <input type="radio" id="general-enquiry" name="query-type" class="radio" >
+                                    <label for="general-enquiry" class="generals">General Enquiry</label>
+                                </div>    
+                                <div class="general">
+                                    <input type="radio" id="support-request" name="query-type" class="radio" >
+                                    <label for="support-request" class="support">Support Request</label>
+                                </div>  
+                            </div>
+                            <span class="error-message error-radio" aria-live="assertive">Please select a query type</span>
+                        </fieldset>
+                    </div>
+                    <div class="message container">
+                        <label for="message">Message <span class="important">*</span></label>
+                        <textarea id="message" name="message" rows="8" cols="50" class="text-area"></textarea>
+                        <span class="error-message" id="message-error" aria-live="assertive">This field is required</span>
+                    </div>
+                    <div class="consent-box-error">
+                        <div class="consent-checkbox">
+                            <input type="checkbox" id="consent" name="consent">
+                            <label for="consent">I consent to being contacted by the team <span class="important">*</span></label>
+                            
+                        </div>
+                        <span class="error-message" id="consent-error" aria-live="assertive">To submit the form, please consent to being contacted</span>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" class="input-btn">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>

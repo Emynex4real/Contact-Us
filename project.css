@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla';
+    color: hsl(187, 24%, 22%);
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+body{
+    background-color: hsl(148, 38%, 91%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-header{
+    font-size: 2rem;
+}
+.main-container{
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact-us-form{
+    background-color: white;
+    padding: 20px 0;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.firstname-lastname{
+    display: flex;
+    /* border: 2px solid; */
+    gap: 10px;
+    justify-content: space-between;
+}
+.firstName{
+    width: 100%;
+}
+.lastName{
+    width: 100%;
+}
+.input{
+    width: 100%;
+    padding: 0px 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid hsl(187, 24%, 22%);
+    cursor: pointer;
+}
+
+.query-type{
+    display: flex;
+    gap: 10px;
+    
+}
+.general-support-radio{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+fieldset{
+    border: none;
+
+}
+
+legend{
+    margin-bottom: 10px;
+}
+.general{
+    border: 1px solid hsl(187, 24%, 22%);
+    border-radius: 5px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+   
+}
+.radio{
+    position: relative;
+    margin-left: 20px;
+    transform: scale(1.5); 
+    cursor: pointer;
+}
+
+.generals, .support{
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.text-area{
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.text-area:focus,
+.input:focus{
+    border: 2px solid hsl(169, 82%, 27%);
+    outline: hsl(169, 82%, 27%);
+}
+
+.radio:focus .general{
+    cursor: pointer;
+    border: 2px solid hsl(169, 82%, 27%);
+    outline: hsl(169, 82%, 27%);
+    background-color: red;
+    /* background-color: red; */
+}
+
+.consent-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#consent{
+    transform: scale(1.5); 
+}
+
+.submit-btn .input-btn{
+    min-height: 50px;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 0px 10px;
+    height: 40px;
+    border-radius: 5px;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.important{
+    color: hsl(169, 82%, 27%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.error-message{
+    color: red;
+    font-size: .8rem;
+    display: none;
+}
+.success{
+    display: flex;
+    border: 2px solid;
+    background-color: hsl(187, 24%, 22%);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    /* position: absolute; */
+}
+.success p{
+    color: white;
+}
+.message-sent{
+    display: flex;
+    gap: 10px;
+}
+.message-sent p{
+    font-weight: bold;
+}
+.success-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.thanks-text{
+    font-size: .75rem;
+}
+
+@media(max-width: 750px){
+    .contact-us-form{
+        min-width: 400px;
+        /* background-color: red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px 0;
+        border-radius: 20px;
+    }
+    .contact-us{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .firstname-lastname{
+        display: flex;
+        /* border: 2px solid; */
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+ 
+    .input{
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid hsl(187, 24%, 22%);
+    }
+
+    .general-support-radio{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
